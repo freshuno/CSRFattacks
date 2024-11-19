@@ -32,5 +32,46 @@
    - W osobnej karcie otwórz plik attack.html
    - Sprawdź zawartość tego pliku, kiedy się z nią zapoznasz naciśnij na stronie przycisk Wykonaj atak.
    - Odśwież http://localhost:3000/ i zauważ że hasło zostało zmienione.
+  
+## Zadanie 2: 
+
+**Cel:** Nauka podstawowego zabezpieczenia aplikacji przed atakami CSRF za pomocą tokenów CSRF.
+
+### Kroki:
+1. **Zainstaluj bibliotekę csurf.**
+    ```xml
+   npm install csurf
+   ```
+2. **Dodaj zmodyfikowany plik aplikacji.**
+   - Pobierz plik tokens.js
+   - Dodaj go do folderu z aplikacją.
+   - Przeanalizuj ten plik i zobacz jakie zaszły zmiany, będą one zaznaczone.
+3. **Uruchom nową wersję aplikacji.**
+   - Uruchom aplikację za pomocą tej komendy:
+    ```xml
+   node tokens.js
+   ```
+   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą attack.html
+   - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem.
+## Zadanie 3: 
+
+**Cel:** Nauka podstawowego zabezpieczenia aplikacji przed atakami CSRF za pomocą SameSite cookies.
+
+### Kroki:
+1. **Zainstaluj bibliotekę express-session.**
+    ```xml
+   npm install express-session
+   ```
+2. **Dodaj zmodyfikowany plik aplikacji.**
+   - Pobierz plik sameSite.js
+   - Dodaj go do folderu z aplikacją.
+   - Przeanalizuj ten plik i zobacz jakie zaszły zmiany, będą one zaznaczone.
+3. **Uruchom nową wersję aplikacji.**
+   - Uruchom aplikację za pomocą tej komendy:
+    ```xml
+   node sameSite.js
+   ```
+   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą attack.html
+   - Dzięki wykorzystaniu SameSite Cookies powinniśmy zostać przekierowani na stronę logowania, zatem próba ataku zakończyła się niepowodzeniem.
 
 
