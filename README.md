@@ -21,16 +21,19 @@
    npm install express body-parser cookie-parser
    ```
 3. **Uruchom aplikacje:**
+   - Utwórz folder, w którym będą przechowywane pliki aplikacji.
+   - Pobierz plik [vulnerable.js](https://github.com/freshuno/CSRFattacks/blob/main/vulnerable.js), jest to wersja aplikacji wrażliwa na ataki CSRF. Przenieś ten plik do folderu który stworzyłeś.
    - Przejdź w CMD do folderu w którym masz pliki aplikacji.
    - Uruchom aplikacje za pomocą tej komendy:
    ```xml
    node vulnerable.js
    ```
    - Wejdź w przeglądarce na adres http://localhost:3000/
-4. **Sprawdź podatność aplikacji na atak CSRF:**
+5. **Sprawdź podatność aplikacji na atak CSRF:**
    - Zaloguj się do aplikacji używając tych danych: nazwa użytkownika: user1 hasło: 12345
-   - W osobnej karcie otwórz plik attack.html
-   - Sprawdź zawartość tego pliku, kiedy się z nią zapoznasz naciśnij na stronie przycisk Wykonaj atak.
+   - Pobierz plik [attack.html](https://github.com/freshuno/CSRFattacks/blob/main/attack.html), będzie on nam służył do przeprowadzania ataków CSRF. Przeanalizuj jego zawartość.
+   - W osobnej karcie otwórz plik `attack.html`.
+   - Naciśnij na stronie przycisk Wykonaj atak.
    - Odśwież http://localhost:3000/ i zauważ że hasło zostało zmienione.
   
 ## Zadanie 2: 
@@ -43,7 +46,7 @@
    npm install csurf
    ```
 2. **Dodaj zmodyfikowany plik aplikacji.**
-   - Pobierz plik tokens.js
+   - Pobierz plik [tokens.js](https://github.com/freshuno/CSRFattacks/blob/main/tokens.js).
    - Dodaj go do folderu z aplikacją.
    - Przeanalizuj ten plik i zobacz jakie zaszły zmiany, będą one zaznaczone.
 3. **Uruchom nową wersję aplikacji.**
@@ -51,7 +54,7 @@
     ```xml
    node tokens.js
    ```
-   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą attack.html
+   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem.
 ## Zadanie 3: 
 
@@ -63,7 +66,7 @@
    npm install express-session
    ```
 2. **Dodaj zmodyfikowany plik aplikacji.**
-   - Pobierz plik sameSite.js
+   - Pobierz plik [sameSite.js](https://github.com/freshuno/CSRFattacks/blob/main/sameSite.js).
    - Dodaj go do folderu z aplikacją.
    - Przeanalizuj ten plik i zobacz jakie zaszły zmiany, będą one zaznaczone.
 3. **Uruchom nową wersję aplikacji.**
@@ -71,7 +74,7 @@
     ```xml
    node sameSite.js
    ```
-   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą attack.html
+   - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu SameSite Cookies powinniśmy zostać przekierowani na stronę logowania, zatem próba ataku zakończyła się niepowodzeniem.
 
 
