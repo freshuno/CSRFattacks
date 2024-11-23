@@ -34,7 +34,7 @@
    - Pobierz plik [attack.html](https://github.com/freshuno/CSRFattacks/blob/main/attack.html), będzie on nam służył do przeprowadzania ataków CSRF. Przeanalizuj jego zawartość.
    - W osobnej karcie otwórz plik `attack.html`.
    - Naciśnij na stronie przycisk Wykonaj atak.
-   - Odśwież http://localhost:3000/ i zauważ że hasło zostało zmienione.
+   - Odśwież http://localhost:3000/ i zauważ że hasło zostało zmienione. Następnie zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w CMD.
   
 ## Zadanie 2: 
 
@@ -56,6 +56,7 @@
    ```
    - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem.
+   - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w CMD.
 ## Zadanie 3: 
 
 **Cel:** Nauka podstawowego zabezpieczenia aplikacji przed atakami CSRF za pomocą SameSite cookies.
