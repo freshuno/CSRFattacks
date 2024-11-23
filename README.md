@@ -11,7 +11,7 @@
 
 ## Zadanie 1: 
 
-**Cel:** Nauka działania prostego ataku CSRF
+**Cel:** Zrozumienie mechanizmu działania ataku CSRF.
 
 ### Kroki:
 1. **Zainstaluj Node.js i NPM, jeśli jeszcze ich nie masz.**
@@ -33,12 +33,13 @@
    - Zaloguj się do aplikacji używając tych danych: nazwa użytkownika: user1 hasło: 12345
    - Pobierz plik [attack.html](https://github.com/freshuno/CSRFattacks/blob/main/attack.html), będzie on nam służył do przeprowadzania ataków CSRF. Przeanalizuj jego zawartość.
    - W osobnej karcie otwórz plik `attack.html`.
+   - (Opcjonalne) Otwórz narzędzie do przechwytywania żądań HTTP (np. Burp) i przechwyć żądanie wysyłane przez formularz w attack.html po kliknięciu Wykonaj atak. Przeanalizuj jego zawartość.
    - Naciśnij na stronie przycisk Wykonaj atak.
    - Odśwież http://localhost:3000/ i zauważ że hasło zostało zmienione. Następnie zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w CMD.
   
 ## Zadanie 2: 
 
-**Cel:** Nauka podstawowego zabezpieczenia aplikacji przed atakami CSRF za pomocą tokenów CSRF.
+**Cel:** Zapoznanie się z mechanizmem tokenów CSRF i ich implementacją.
 
 ### Kroki:
 1. **Zainstaluj bibliotekę csurf.**
@@ -59,7 +60,7 @@
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w CMD.
 ## Zadanie 3: 
 
-**Cel:** Nauka podstawowego zabezpieczenia aplikacji przed atakami CSRF za pomocą SameSite cookies.
+**Cel:** Poznanie mechanizmu SameSite cookies i jego zastosowania w ochronie przed CSRF.
 
 ### Kroki:
 1. **Zainstaluj bibliotekę express-session.**
