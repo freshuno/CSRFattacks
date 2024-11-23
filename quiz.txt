@@ -1,0 +1,52 @@
+1. Czym jest atak CSRF?
+a) Atakiem polegającym na podszywaniu się pod inny serwer.
+b) Atakiem wykorzystującym zaufanie serwera do uwierzytelnionego użytkownika.
+c) Atakiem polegającym na przepełnieniu bufora.
+d) Atakiem polegającym na odczytywaniu danych z pamięci.
+2. Które z poniższych działań może być skutkiem ataku CSRF?
+a) Wyświetlenie poufnych danych użytkownika.
+b) Zainstalowanie złośliwego oprogramowania na komputerze użytkownika.
+c) Zmiana hasła użytkownika bez jego wiedzy.
+d) Wyłączenie serwera.
+3. Który z poniższych elementów jest niezbędny do przeprowadzenia ataku CSRF?
+a) Złośliwe oprogramowanie na komputerze ofiary.
+b) Dostęp do bazy danych aplikacji.
+c) Uwierzytelniony użytkownik w aplikacji.
+d) Znajomość adresu IP serwera.
+4. Jaka jest najbardziej restrykcyjna wartość atrybutu SameSite?
+a) Lax
+b) Strict
+c) None
+d) Secure
+5. Gdzie zazwyczaj umieszczane są tokeny CSRF w formularzach HTML?
+a) W widocznych polach tekstowych.
+b) W ukrytych polach formularza.
+c) W nagłówkach formularza.
+d) W ciasteczkach.
+6. W jaki sposób atakujący może nakłonić ofiarę do wykonania ataku CSRF?
+a) Wysyłając email z linkiem do złośliwej strony.
+b) Umieszczając złośliwy kod na popularnej stronie internetowej.
+c) Infekując komputer ofiary złośliwym oprogramowaniem.
+d) Wszystkie odpowiedzi są poprawne.
+7. Który z poniższych przykładów przedstawia atak CSRF?
+a)  Użytkownik klika w link, który zmienia jego adres email w aplikacji bankowej.
+b)  Użytkownik loguje się na fałszywej stronie bankowej i podaje swoje dane logowania.
+c)  Użytkownik pobiera złośliwe oprogramowanie, które kradnie jego hasła.
+d)  Użytkownik otrzymuje email z prośbą o podanie danych karty kredytowej.
+8. Dlaczego nagłówki SameSite cookies są skuteczne przeciwko atakom CSRF?
+a) Uniemożliwiają przeglądarce wysyłanie ciasteczek z żądaniami z innych witryn.
+b) Blokują dostęp do ciasteczek użytkownika przez JavaScript.
+c) Zmuszają użytkownika do ponownego logowania się po określonym czasie.
+d) Automatycznie szyfrują dane przesyłane w ciasteczkach.
+9. Który z poniższych mechanizmów nie chroni przed atakami CSRF?
+a) Tokeny CSRF.
+b) SameSite cookies.
+c) Ponowne uwierzytelnianie.
+d) Używanie ciasteczek bez atrybutu Secure.
+10. Dlaczego napastnik nie może użyć tokenu CSRF do przeprowadzenia ataku?
+a) Token CSRF jest widoczny tylko dla serwera.
+b) Token CSRF jest losowy i unikalny dla każdej sesji i użytkownika.
+c) Token CSRF jest przechowywany w nagłówkach przeglądarki.
+d) Token CSRF działa tylko w połączeniach szyfrowanych HTTPS.
+
+Odp: b), c), c), b), b), d), a), a), d), b)
