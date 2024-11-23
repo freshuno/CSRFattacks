@@ -1,13 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const csrf = require('csurf'); // Import CSRF middleware
+const csrf = require('csurf'); // Import CSRF middleware (+ dodanie biblioteki csurf)
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// Konfiguracja CSRF middleware
+// Konfiguracja CSRF middleware (+ konfiguracja middleware)
 const csrfProtection = csrf({ cookie: true }); // Token będzie przechowywany w ciasteczku
 app.use(csrfProtection);
 
@@ -77,7 +77,7 @@ app.get('/change-password', (req, res) => {
     return;
   }
 
-  // Dodanie tokena CSRF do formularza
+  // Dodanie tokena CSRF do formularza (+ dodanie tokena do formularza)
   res.send(`
     <h1>Zmień hasło</h1>
     <form method="POST" action="/change-password">

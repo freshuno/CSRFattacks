@@ -52,7 +52,7 @@ app.get('/login', (req, res) => {
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
   if (userDatabase[username] && userDatabase[username].password === password) {
-    res.cookie('username', username, {
+    res.cookie('username', username, {  // (+ dodanie atrybutu sameSite do ciasteczka)
       httpOnly: true, // Chroni przed XSS
       sameSite: 'Strict', // Chroni przed CSRF
     });
