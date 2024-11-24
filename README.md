@@ -53,7 +53,8 @@
      node tokens.js
      ```
    - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
-   - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem. Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
+   - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem.
+   - Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
 ## Zadanie 3: 
 
@@ -75,5 +76,7 @@
      ```
    - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu SameSite cookies powinniśmy zostać przekierowani na stronę logowania, zatem próba ataku zakończyła się niepowodzeniem.
+   - Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
+   - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
 
 
