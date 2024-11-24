@@ -1,12 +1,9 @@
 # Zabezpieczanie aplikacji przed atakami Cross-Site Request Forgery (CSRF)
 
 ## Część Teoretyczna
-### Źródła
-- [Lesson about CSRF Attacks](https://learn.snyk.io/lesson/csrf-attack/)
-- [CSRF Article](https://www.linkedin.com/pulse/cross-site-request-forgery-csrf-syed-muhammad-abdul-karim/)
-### Prezentacja
-- [Link do prezentacji]()
-- [Link do prezentacji w przeglądarce]()
+  - [Prezentacja](https://docs.google.com/presentation/d/e/2PACX-1vToHIr1hRaL1ku4UmKCd3Pu1uDdPcLfJpg5tObTrX16LpoDLaZ8ooopOuBMeBTGAzwP4EmD6DeFPYq_/pub)
+  - [Lesson about CSRF Attacks | Tutorial & Examples](https://learn.snyk.io/lesson/csrf-attack/)
+  - [Cross Site Request Forgery (CSRF) | LinkedIn](https://www.linkedin.com/pulse/cross-site-request-forgery-csrf-syed-muhammad-abdul-karim/)
 ## Część Praktyczna
 
 ## Zadanie 1: 
