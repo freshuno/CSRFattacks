@@ -17,7 +17,7 @@
    ```console
    npm install express body-parser cookie-parser
    ```
-3. **Uruchom aplikacje:**
+3. **Uruchom aplikację:**
    - Utwórz folder, w którym będą przechowywane pliki aplikacji.
    - Pobierz plik [vulnerable.js](https://github.com/freshuno/CSRFattacks/blob/main/vulnerable.js), jest to wersja aplikacji wrażliwa na ataki CSRF. Przenieś ten plik do folderu który stworzyłeś.
    - Przejdź w Terminalu do folderu, w którym znajdują się pliki aplikacji.
