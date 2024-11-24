@@ -4,6 +4,7 @@
   - [Prezentacja](https://docs.google.com/presentation/d/e/2PACX-1vToHIr1hRaL1ku4UmKCd3Pu1uDdPcLfJpg5tObTrX16LpoDLaZ8ooopOuBMeBTGAzwP4EmD6DeFPYq_/pub)
   - [Lesson about CSRF Attacks | Tutorial & Examples](https://learn.snyk.io/lesson/csrf-attack/)
   - [Cross Site Request Forgery (CSRF) | LinkedIn](https://www.linkedin.com/pulse/cross-site-request-forgery-csrf-syed-muhammad-abdul-karim/)
+  - (Opcjonalne) [How do you use CORS and CSP to prevent cross-site scripting and request forgery attacks? | LinkedIn](https://www.linkedin.com/advice/3/how-do-you-use-cors-csp-prevent-cross-site-scripting)
 ## Część Praktyczna
 
 ## Zadanie 1: 
