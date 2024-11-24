@@ -45,8 +45,11 @@ app.get('/', (req, res) => {
 
 // Strona logowania
 app.get('/login', (req, res) => {
+
+  // Dodanie tokena CSRF do formularza (+ dodanie tokena do formularza)
   res.send(`
     <form method="POST" action="/login">
+      <input type="hidden" name="_csrf" value="${req.csrfToken()}" />
       <label>Username: <input type="text" name="username" /></label><br>
       <label>Password: <input type="password" name="password" /></label><br>
       <button type="submit">Zaloguj</button>
