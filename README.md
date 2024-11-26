@@ -33,7 +33,7 @@
    - W osobnej karcie otwórz plik `attack.html`.
    - (Opcjonalne) Otwórz narzędzie do przechwytywania żądań HTTP (np. Burp) i przechwyć żądanie wysyłane przez formularz w `attack.html` po kliknięciu Wykonaj atak. Przeanalizuj jego zawartość.
    - Naciśnij na stronie przycisk Wykonaj atak.
-   - Odśwież stronę aplikacji i zauważ, że hasło zostało zmienione. Zdjęcie pokazujące zmienione hasło wyślij na Upel.
+   - Odśwież stronę aplikacji i zauważ, że hasło zostało zmienione. Zrzut ekranu pokazujący zmienione hasło wyślij na Upel.
    - Następnie zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
   
 ## Zadanie 2: 
@@ -57,7 +57,7 @@
    - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu tokenów CSRF próba ataku zakończyła się niepowodzeniem.
    - Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
-   - Wyślij na Upel zdjęcie wartości _csrf w Application > Cookies oraz błąd po nieudanym ataku.
+   - Wyślij na Upel zrzut ekranu wartości _csrf w Application > Cookies oraz błąd po nieudanym ataku.
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
 ## Zadanie 3: 
 
@@ -80,7 +80,7 @@
    - Zaloguj się i spróbuj tak jak wcześniej zmienić hasło za pomocą `attack.html`.
    - Dzięki wykorzystaniu SameSite cookies powinniśmy zostać przekierowani na stronę logowania, zatem próba ataku zakończyła się niepowodzeniem.
    - Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
-   - Wyślij na Upel zdjęcie Application > Cookies.
+   - Wyślij na Upel zrzut ekranu Application > Cookies.
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
 
 
