@@ -30,6 +30,7 @@
 5. **Sprawdź podatność aplikacji na atak CSRF:**
    - Zaloguj się do aplikacji używając tych danych: nazwa użytkownika: user1 hasło: 12345
    - Pobierz plik [attack.html](https://github.com/freshuno/CSRFattacks/blob/main/attack.html), będzie nam służył do przeprowadzania ataków CSRF. Przeanalizuj jego zawartość.
+   - W pliku `attack.html` brakuje jednej linijki. Uzupełnij ją w taki sposób, aby po kliknięciu przycisku hasło użytkownika zamieniało się na hacked123. (Wspomóż się prezentacją, w razie problemów zajrzyj [tutaj](https://github.com/freshuno/CSRFattacks/blob/main/hints/1.html))
    - W osobnej karcie otwórz plik `attack.html`.
    - (Opcjonalne) Otwórz narzędzie do przechwytywania żądań HTTP (np. Burp) i przechwyć żądanie wysyłane przez formularz w `attack.html` po kliknięciu Wykonaj atak. Przeanalizuj jego zawartość.
    - Naciśnij na stronie przycisk Wykonaj atak.
