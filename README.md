@@ -83,5 +83,13 @@
    - Sprawdź zakładkę Application > Cookies w oknie deweloperskim przeglądarki.
    - Wyślij na Upel zrzut ekranu Application > Cookies.
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
+## Zadanie 4: 
 
+**Cel:** Zabezpieczenie serwera przy użyciu CORS i CSP.
+
+### Kroki:
+1. **Zainstaluj bibliotekę cors.**
+   ```console
+   npm install cors
+   ```
 
