@@ -110,5 +110,5 @@
    - 
 
 7. **Zrzuty ekranu:**
-   - Wykonaj zrzut ekranu błędów w konsoli przeglądarki dla obu testów (CORS i CSP).
+   - Wykonaj zrzut ekranu błędów w konsoli przeglądarki
    - Wyślij zrzuty ekranu na Upel.
