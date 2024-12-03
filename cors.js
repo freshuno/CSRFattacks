@@ -21,11 +21,12 @@ app.use((req, res, next) => {
   next();
 });
 
-// Konfiguracja CORS
-app.use(cors({
-  origin: 'http://localhost:4000', 
-  credentials: true, 
-}));
+app.use(
+  cors({
+    origin: 'http://localhost:3001', // Zezwalamy TYLKO na zapytania z portu 3001
+    credentials: true, // Włączamy obsługę ciasteczek
+  })
+);
 
 // Strona główna
 app.get('/', (req, res) => {
