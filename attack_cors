@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test CORS</title>
+</head>
+<body>
+  <h1>Test CORS</h1>
+  <button id="fetchDataBtn">Fetch Data</button>
+  
+  <script>
+    // Dodajemy obsługę przycisku
+    document.getElementById('fetchDataBtn').addEventListener('click', () => {
+      fetch('http://localhost:3000', {
+        method: 'GET', // Metoda HTTP
+        headers: {
+          'Content-Type': 'application/json', // Dodajemy nagłówek
+        },
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Odpowiedź z serwera:', data);
+      })
+      .catch(error => {
+        console.error('Błąd CORS lub inny błąd:', error);
+      });
+    });
+  </script>
+</body>
+</html>
