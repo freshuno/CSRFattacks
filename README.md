@@ -93,22 +93,23 @@
    npm install cors
    npm install -g http-server
    ```
-2. **Upewnij się, że masz pliki**
-   - [cors.js](https://github.com/freshuno/CSRFattacks/blob/main/cors.js) — serwer główny, przeanalizuj zmiany
-   - attack.html
+2. **Dodaj następujące pliki do folderu z aplikacją**
+   - [corsExample.js](https://github.com/freshuno/CSRFattacks/blob/main/corsExample.js) 
+   - [testCors.html](https://github.com/freshuno/CSRFattacks/blob/main/testCors.html) 
 3. **Uruchom aplikację backendową:**
      ```bash
-     node cors.js
+     node corsExample.js
      ```
 4. **Uruchom serwer frontendowy:**
-   - W Terminalu uruchom serwer HTTP na porcie 4000:
+   - Uruchom Terminal jako administrator, następnie przejdź do folderu z aplikacją.
+   - W Terminalu uruchom serwer HTTP na porcie 5000:
      ```bash
-     http-server -p 4000 --cors
+     http-server -p 5000 --cors
      ```
-5. **Przeprowadź test działania mechanizmu CORS:**
+6. **Przeprowadź test działania mechanizmu CORS:**
+   - Wejdź na adres http://localhost:5000/testCors.html i spróbuj przeprowadzić atak.
    - Zauważ, że atak zostanie zablokowany dzięki konfiguracji CORS.
-   - 
-
+   - Zmodyfikuj corsExample.js w taki sposób, aby atak się powiódł.
 7. **Zrzuty ekranu:**
-   - Wykonaj zrzut ekranu błędów w konsoli przeglądarki
+   - Wykonaj zrzut ekranu wiadomości po udanym ataku.
    - Wyślij zrzuty ekranu na Upel.
