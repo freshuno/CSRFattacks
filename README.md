@@ -85,11 +85,30 @@
    - Zatrzymaj aplikację za pomocą skrótu klawiszowego Ctrl + C w Terminalu.
 ## Zadanie 4: 
 
-**Cel:** Zabezpieczenie serwera przy użyciu CORS i CSP.
+**Cel:** Poznanie mechanizmu CORS i jego roli w ochronie aplikacji przed zapytaniami z nieautoryzowanych źródeł.
 
 ### Kroki:
-1. **Zainstaluj bibliotekę cors.**
+1. **Zainstaluj cors i http-server.**
    ```console
    npm install cors
+   npm install -g http-server
    ```
+2. **Upewnij się, że masz pliki**
+   - [cors.js](https://github.com/freshuno/CSRFattacks/blob/main/cors.js) — serwer główny, przeanalizuj zmiany
+   - attack.html
+3. **Uruchom aplikację backendową:**
+     ```bash
+     node cors.js
+     ```
+4. **Uruchom serwer frontendowy:**
+   - W Terminalu uruchom serwer HTTP na porcie 4000:
+     ```bash
+     http-server -p 4000 --cors
+     ```
+5. **Przeprowadź test działania mechanizmu CORS:**
+   - Zauważ, że atak zostanie zablokowany dzięki konfiguracji CORS.
+   - 
 
+7. **Zrzuty ekranu:**
+   - Wykonaj zrzut ekranu błędów w konsoli przeglądarki dla obu testów (CORS i CSP).
+   - Wyślij zrzuty ekranu na Upel.
