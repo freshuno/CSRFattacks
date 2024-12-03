@@ -10,12 +10,12 @@
   <button id="fetchDataBtn">Fetch Data</button>
   
   <script>
-    // Dodajemy obsługę przycisku
+
     document.getElementById('fetchDataBtn').addEventListener('click', () => {
       fetch('http://localhost:3000', {
-        method: 'GET', // Metoda HTTP
+        method: 'GET',
         headers: {
-          'Content-Type': 'application/json', // Dodajemy nagłówek
+          'Content-Type': 'application/json', 
         },
       })
       .then(response => response.json())
