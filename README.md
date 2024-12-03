@@ -110,6 +110,7 @@
    - Wejdź na adres http://localhost:5000/testCors.html i spróbuj przeprowadzić atak.
    - Zauważ, że atak zostanie zablokowany dzięki konfiguracji CORS.
    - Zmodyfikuj corsExample.js w taki sposób, aby atak się powiódł.
+   - Uruchom ponownie aplikacje i przeprowadź udany atak.
 7. **Zrzuty ekranu:**
    - Wykonaj zrzut ekranu wiadomości po udanym ataku.
    - Wyślij zrzuty ekranu na Upel.
